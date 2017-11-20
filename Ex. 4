@@ -1,0 +1,15 @@
+answer = input("Hello user, please enter a number and I will tell you its divisors: ")
+
+answer = int(answer)
+
+x = list(range(2,answer+1))
+
+answerList = []
+
+print("Your number is dividable by the following divisors: ")
+
+for elem in x:
+    if answer % elem == 0:
+        answerList.append(elem)
+
+print(answerList)
