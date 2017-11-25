@@ -1,0 +1,24 @@
+count = 0
+yes = 'yes'
+
+while yes == 'yes':
+    yes = input("Would you like to check a number? ")
+    if yes == 'no':
+        break
+    
+
+    def primechecker():
+    
+        number = int(input("Please provide me a number and I will tell you if it is prime "))
+        leist = [2,number-1]
+        for i in leist:
+            if number % i == 0:
+                return("This number is not a prime")
+            else:
+                return("This number is a prime")
+    count = count+1
+
+
+
+    print(primechecker())
+    print("You have checked " + str(count) + " numbers")
