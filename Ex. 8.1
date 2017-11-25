@@ -1,0 +1,36 @@
+a= input("Hello Player 1, what is your name? ")
+b= input("Hello Player 2, what is your name? ")
+
+
+while True:
+
+    c= input("%s, please choose rock, paper or scissors " % a)
+    d= input("%s, please choose rock, paper or scissors " % b)
+
+    def winner(c,d):
+        if c == d:
+            return("It's a tie!")
+        elif c == 'rock':
+            if d == 'scissors':
+                return("%s wins!" %a)
+            else:
+                return("%s wins!" %b)
+        elif c == 'scissors':
+            if d == 'rock':
+                return("%s wins!" %b)
+            else:
+                return("%s wins!" %a)
+        elif c == 'paper':
+            if d == 'rock':
+                return("%s wins!" %a)
+            else:
+                return("%s wins!" %b)
+        else:
+            return("I'm sorry, I can't work with this input")
+
+    print(winner(c,d))
+
+    yes = input("Would you like to play again? ")
+
+    if yes == 'no':
+        break
